@@ -1,0 +1,114 @@
+body {
+    background-color: #16202e; /* Cor de fundo da página */
+    color: #222222; /* Cor do texto */
+    margin: 0;
+}
+
+/* Estilo para cabeçalho e rodapé */
+.page-header, .page-footer {
+    background-color: #1e4d2c; /* Fundo verde escuro */
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+    color: #fafafa; /* Texto claro */
+}
+
+/* Container principal que usa Flexbox para alinhar a sidebar e o conteúdo */
+.page-container {
+    display: flex;
+    gap: 30px; /* Espaço de 30px entre a barra lateral e o conteúdo */
+    padding: 30px;
+    max-width: 1400px; /* Largura máxima da página */
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+/* Barra Lateral*/
+.sidebar {
+    flex: 0 0 220px; /* Define um tamanho fixo de 220px para a sidebar */
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra suave */
+    height: fit-content; /* A altura se ajusta ao conteúdo interno */
+}
+
+.main-content {
+    flex: 1; /* Permite que o conteúdo principal ocupe todo o espaço restante */
+}
+
+/* Estilo para a caixa de controles de filtro */
+.filter-controls {
+    display: flex;
+    justify-content: flex-start; /* Alinha itens à esquerda */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+#searchInput {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    font-size: 1em;
+}
+
+/* Grade de Cards (Flexbox)  */
+.book-collection-container {
+    display: flex; /* Usa flexbox para alinhar os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    gap: 25px; /* Espaço entre os cards */
+}
+
+/* Estilos do Card  */
+.book-card {
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 10px;
+    padding: 20px;
+    flex-basis: 240px; /* Largura base de cada card */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo do card em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+}
+
+.book-cover {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px; 
+    margin-bottom: 15px;
+ }
+.book-title { 
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #2c3e50;
+}
+.book-author { 
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 15px; 
+}
+
+.book-description {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.5;
+
+}
+.book-code {
+    font-size: 0.75em;
+    color: #bdc3c7;
+    margin-top: 15px; 
+}
+
+
+
+
